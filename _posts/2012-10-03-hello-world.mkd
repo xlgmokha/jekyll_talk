@@ -5,12 +5,46 @@ date: 2012-10-03 21:35
 comments: true
 categories: [read, write, execute]
 ---
-# HI there
-## my name is jekyll
-### i am here to serve you.
+HI there. my name is [jekyll](https://github.com/mojombo/jekyll). I am here to serve you.
 
-if you want me to generate your site then from your shell run the
-following:
+### Why do I want to get to know you?
+
+Because I can help you build sites that generally don't need to be "dynamic" and because I am fun!
+
+### What are you?
+
+I am a static site generator. You write your content in a markup
+language of your choice and I will convert that to html for you. I will
+let you pick between [markdown](http://daringfireball.net/projects/markdown/), 
+[textile](http://hobix.github.com/hobix/textile/) and html.
+
+To get started you will need to [install](https://github.com/mojombo/jekyll/wiki/install) me and a gem for your 
+choice of markup language (markdown, textile).
+
+{% highlight text %}
+
+  $ gem install jekyll rdiscount
+
+{% endhighlight %}
+
+### Can I customize the stuff I need you to generate?
+
+Yeah, I guess but I have some conventions that I need you to follow.
+
+First of all I like things to be laid out in certain way. If you name
+a directory starting with an underscore I will exclude it from the final
+site that I generate for you.
+
+* /jekyll_talk/
+  * _includes/ # contains partials that can be included in to your pages.
+  * _layouts/  # contains different templates that your content pages can be nested within.
+  * _posts/    # contains your pages.  ([markdown](http://daringfireball.net/projects/markdown/), [textile](http://hobix.github.com/hobix/textile/), html)
+  * _site/ # contains your generated site
+  * _config.yml # contains your configuration
+
+### How do I tell you to generate my stuff?
+
+If you want me to generate your site then just tell me:
 
 {% highlight text %}
 
@@ -18,8 +52,8 @@ following:
 
 {% endhighlight %}
 
-if you would like me to run a server for you to browse your site
-locally, run this from your shell.
+Also, if you would like me to run a server for you to browse your site
+locally, you can tell me like this.
 
 {% highlight text %}
 
@@ -27,8 +61,52 @@ locally, run this from your shell.
 
 {% endhighlight %}
 
-what did he say?
+### what markup language should I choose?
+
+I like markdown. It's pretty simple and for the most part if there are
+some challenging things you need to produce, I'll let you write out the
+html and I'll just render that as you tell me too.
+
+Here's a cheat sheet to get you started.
+
+{% highlight text %}
+
+# <h1>
+## <h2>
+### <h3>
+#### <h4>
+##### <h5>
+
+p <p>
+
+[google.com](http://google.com) <a>
+
+> blockquote
+
+* li
+
+** strong
+
+{% endhighlight %}
+
+
+Here are some examples
+
+# h1
+## h2
+### h3
+#### h4
+##### h5
+
+paragraph
+
+[anchor link](/tongue-twister/2012/10/03/if-a-wood-chuck-could-chuck.html)
 
 > don't quote me - mo
 
-[do you like wood chucks](/tongue-twister/2012/10/03/if-a-wood-chuck-could-chuck.html)
+* grow hair
+* get a haircut
+
+### Thanks Jekyll, you seem interesting. I'll call you sometime.
+
+That's what they all say!
