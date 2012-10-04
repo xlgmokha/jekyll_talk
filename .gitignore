@@ -1,0 +1,6 @@
+_site
+_deploy
+*.swp
+.DS_Store
+NERD_tree_*
+_cache
