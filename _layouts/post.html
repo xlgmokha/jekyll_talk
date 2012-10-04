@@ -1,5 +1,5 @@
 ---
-layout: 1column
+layout: master
 ---
 <article>
   <header>
@@ -8,7 +8,7 @@ layout: 1column
       <h5>
         Posted on {{ page.date | date:"%B %d, %Y" }}
         {% for category in page.categories %} 
-        <a href='/topics/{{ category }}/'><span class="label">{{ category }}</span></a>
+        <span class="label">{{ category }}</span>
         {% endfor %} 
       </h5>
     </div>
